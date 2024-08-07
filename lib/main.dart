@@ -22,10 +22,12 @@ class MyApp extends StatelessWidget {
       create: (context) =>
           CardBloc()..add(LoadCards()), // Dastlabki kartalarni yuklash
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Online Bank',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
+
         home: LoginScreen(),
         // Agar `CardListScreen` asosiy ekran bo'lsa, quyidagi qatorni o'zgartiring:
         // home: CardListScreen(),
